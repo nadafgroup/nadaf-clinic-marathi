@@ -53,6 +53,7 @@ export class HomeComponent {
     }
   }
 
+  // Navigation Items
   navItems = [
     { name: 'मुख्यपृष्ठ', link: '#home' },
     { name: 'सेवा', link: '#services' },
@@ -61,12 +62,14 @@ export class HomeComponent {
     { name: 'संपर्क', link: '#contact' }
   ];
 
+  // About Cards
   aboutCards = [
     { icon: 'fas fa-flag', title: 'आमचे ध्येय', text: 'प्रत्येक रुग्णाला वेदनामुक्त, सक्रिय आणि निरोगी जीवन जगण्यासाठी सर्वोत्तम फिजिओथेरपी सेवा प्रदान करणे.' },
     { icon: 'fas fa-eye', title: 'आमची दृष्टी', text: 'उच्च दर्जाची, परिणामकारक आणि विश्वासार्ह फिजिओथेरपी सेवा देऊन समाजातील आरोग्य आणि जीवनमानात सकारात्मक बदल घडवणे.' },
     { icon: 'fas fa-handshake', title: 'आमचे वचन', text: 'तुमचे आरोग्य, तुमचा विश्वास आणि तुमचे समाधान हेच आमचे सर्वात मोठे यश आहे.' }
   ];
 
+  // Services
   services = [
     { name: 'पाठदुखी व मानदुखी', icon: 'fas fa-spine', desc: 'तज्ज्ञ फिजिओथेरपीद्वारे पाठ आणि मानेच्या वेदनांवर प्रभावी उपचार.', gradient: 'linear-gradient(135deg, #FF6B6B, #FF8E8E)' },
     { name: 'सांधेदुखी उपचार', icon: 'fas fa-joint', desc: 'सांधेदुखीवर आधुनिक उपचार पद्धती आणि व्यायाम थेरपी.', gradient: 'linear-gradient(135deg, #4ECDC4, #6EDDD6)' },
@@ -76,6 +79,7 @@ export class HomeComponent {
     { name: 'शस्त्रक्रियेनंतर पुनर्वसन', icon: 'fas fa-procedures', desc: 'शस्त्रक्रियेनंतर जलद पुनर्प्राप्तीसाठी वैयक्तिक कार्यक्रम.', gradient: 'linear-gradient(135deg, #F7DC6F, #FAE894)' }
   ];
 
+  // Why Choose Us
   reasons = [
     { icon: 'fas fa-user-md', text: 'अनुभवी व कुशल फिजिओथेरपिस्ट' },
     { icon: 'fas fa-user-edit', text: 'वैयक्तिक उपचार योजना' },
@@ -85,6 +89,7 @@ export class HomeComponent {
     { icon: 'fas fa-hand-holding-heart', text: 'रुग्णकेंद्रित सेवा' }
   ];
 
+  // Testimonials
   testimonials = [
     { name: 'रमेश पाटील', text: 'पाठदुखीच्या त्रासातून मुक्ती मिळाली. नदाफ क्लिनिकच्या उपचारांनी माझे जीवन सुधारले.', rating: 5, location: 'कोल्हापूर' },
     { name: 'स्नेहा जोशी', text: 'गुडघेदुखीवर खूप प्रभावी उपचार. खूप आभारी आहे.', rating: 5, location: 'शिरोळ' },
@@ -92,21 +97,50 @@ export class HomeComponent {
     { name: 'मीना कुलकर्णी', text: 'माझ्या आईला झालेल्या अपघातानंतर उत्तम पुनर्वसन.', rating: 5, location: 'कोल्हापूर' }
   ];
 
+  // Stats
   stats = [
     { number: '1000+', label: 'समाधानी रुग्ण', icon: 'fas fa-users' },
     { number: '98%', label: 'यशस्वी उपचार', icon: 'fas fa-percent' },
-    { number: '15+', label: 'वर्षे अनुभव', icon: 'fas fa-calendar-alt' },
+    { number: '7+', label: 'वर्षे अनुभव', icon: 'fas fa-calendar-alt' },
     { number: '24/7', label: 'सेवा उपलब्धता', icon: 'fas fa-clock' }
   ];
 
+  // Contact Items
   contactItems = [
-    { icon: 'fas fa-phone-alt', title: 'फोन', value: '+91 86691 03497', link: 'tel:+918669103497' },
-    { icon: 'fas fa-envelope', title: 'ई-मेल', value: 'nadafgroup.in&#64;gmail.com', link: 'mailto:nadafgroup.in&#64;gmail.com' },
-    { icon: 'fas fa-map-marker-alt', title: 'पत्ता', value: 'नांदणी, ता. शिरोळ, जि. कोल्हापूर', link: '' }
-  ];
+  { icon: 'fas fa-phone-alt', title: 'फोन', value: '+91 86691 03497', link: 'tel:+918669103497' },
+  { icon: 'fas fa-envelope', title: 'ई-मेल', value: 'nadafgroup.in&#64;gmail.com', link: 'mailto:nadafgroup.in&#64;gmail.com' },
+  { icon: 'fas fa-map-marker-alt', title: 'पत्ता', value: 'नांदणी, ता. शिरोळ, जि. कोल्हापूर', link: '' }
+];
 
+  // Working Hours
   workingHours = [
-    { day: 'सोमवार - शनिवार', hours: 'सकाळी 9:00 - संध्याकाळी 8:00' },
+    { day: 'सोमवार - शनिवार', hours: 'संध्याकाळी 5:00 - रात्री 10:00' },
     { day: 'रविवार', hours: 'सकाळी 10:00 - दुपारी 2:00' }
   ];
+
+  // Pediatric Specialties
+  pediatricSpecialties = [
+    { icon: 'fas fa-child', title: 'बाल पुनर्वसन', desc: 'Pediatric Rehabilitation' },
+    { icon: 'fas fa-brain', title: 'न्यूरोडेव्हलपमेंटल थेरपी', desc: 'Neurodevelopmental Therapy' },
+    { icon: 'fas fa-hand-holding-heart', title: 'लवकर हस्तक्षेप', desc: 'Early Intervention' },
+    { icon: 'fas fa-clock', title: 'विकासातील उशीर व्यवस्थापन', desc: 'Developmental Delay Management' }
+  ];
+
+  // Treatment Methods
+  treatmentMethods = [
+    { icon: 'fas fa-dumbbell', name: 'व्यायाम थेरपी' },
+    { icon: 'fas fa-hand-holding-heart', name: 'मॅन्युअल थेरपी' },
+    { icon: 'fas fa-brain', name: 'न्यूरोडेव्हलपमेंटल ट्रीटमेंट (NDT)' },
+    { icon: 'fas fa-running', name: 'स्नायू बळकटीकरण व स्ट्रेचिंग' },
+    { icon: 'fas fa-balance-scale', name: 'संतुलन व चाल प्रशिक्षण' },
+    { icon: 'fas fa-bolt', name: 'इलेक्ट्रोथेरपी (IFT, TENS, अल्ट्रासाऊंड)' },
+    { icon: 'fas fa-user-check', name: 'पोस्चर सुधारणा व एर्गोनॉमिक्स' },
+    { icon: 'fas fa-home', name: 'घरगुती व्यायाम योजना' }
+  ];
+
+  // Pediatric Quote
+  pediatricQuote = {
+    text: '"प्रत्येक उशिरा पडलेले पाऊल आशेने भरलेले असते—आणि आम्ही त्या आशेला प्रगतीत बदलण्यासाठी सोबत आहोत."',
+    author: 'नदाफ फिजिओ क्लिनिक'
+  };
 }

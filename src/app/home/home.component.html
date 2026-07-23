@@ -110,14 +110,14 @@
                 <i class="fas fa-graduation-cap"></i> MPT (मास्टर ऑफ फिजिओथेरपी)
               </p>
               <p class="doctor-speciality">
-                <i class="fas fa-stethoscope"></i> ऑर्थोपेडिक फिजिओथेरपी तज्ज्ञ
+                <i class="fas fa-stethoscope"></i> पेडियाट्रिक फिजिओथेरपी तज्ज्ञ
               </p>
               <div class="doctor-experience">
-                <span><i class="fas fa-calendar-alt"></i> 15+ वर्षे अनुभव</span>
+                <span><i class="fas fa-calendar-alt"></i> 7+ वर्षे अनुभव</span>
                 <span><i class="fas fa-users"></i> 1000+ समाधानी रुग्ण</span>
               </div>
               <div class="doctor-description">
-                <p>डॉ. सनोबर रफिक नदाफ यांना ऑर्थोपेडिक फिजिओथेरपीमध्ये 15 वर्षांहून अधिक अनुभव आहे. त्यांनी 1000 पेक्षा जास्त रुग्णांना वेदनामुक्त जीवन प्रदान केले आहे. त्यांची तज्ज्ञता पाठदुखी, सांधेदुखी, खेळातील दुखापती आणि शस्त्रक्रियेनंतरच्या पुनर्वसनात आहे.</p>
+                <p>डॉ. सनोबर रफिक नदाफ यांना पेडियाट्रिक फिजिओथेरपीमध्ये 7 वर्षांहून अधिक अनुभव आहे. त्यांनी 1000 पेक्षा जास्त बालरुग्णांना वेदनामुक्त जीवन प्रदान केले आहे. त्यांची तज्ज्ञता बालकांच्या विकासात्मक विकार, स्नायू-सांधे समस्या, आणि जन्मजात विकारांच्या पुनर्वसनात आहे.</p>
               </div>
               <div class="doctor-contact">
                 <a href="tel:+918669103497" class="btn btn-call">
@@ -134,6 +134,49 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pediatric Specialties Section -->
+<section class="pediatric-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">✦ आमची विशेषता ✦</span>
+      <h2 class="section-title">पेडियाट्रिक फिजिओथेरपी <span class="highlight">विशेषता</span></h2>
+      <div class="title-line"></div>
+      <p class="section-desc">आमच्या तज्ज्ञ डॉक्टरांच्या मार्गदर्शनाखाली बालकांच्या विकासासाठी विशेष उपचार पद्धती.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" *ngFor="let specialty of pediatricSpecialties">
+        <div class="specialty-card">
+          <div class="specialty-icon">
+            <i [class]="specialty.icon"></i>
+          </div>
+          <h4>{{ specialty.title }}</h4>
+          <p class="specialty-desc">{{ specialty.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Treatment Methods Section -->
+<section class="treatment-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">✦ उपचार पद्धती ✦</span>
+      <h2 class="section-title">आमच्या <span class="highlight">उपचार</span> पद्धती</h2>
+      <div class="title-line"></div>
+      <p class="section-desc">बालकांच्या गरजेनुसार वैज्ञानिक आणि प्रभावी उपचार पद्धती.</p>
+    </div>
+    <div class="treatment-grid">
+      <div class="treatment-item" *ngFor="let method of treatmentMethods">
+        <div class="treatment-icon">
+          <i [class]="method.icon"></i>
+        </div>
+        <span>{{ method.name }}</span>
       </div>
     </div>
   </div>
@@ -252,6 +295,7 @@
       <p class="section-desc">तुमच्या आरोग्यासाठी पहिलं पाऊल उचला. आम्ही तुमची मदत करण्यासाठी येथे आहोत.</p>
     </div>
     <div class="row g-4">
+      <!-- Contact Info -->
       <div class="col-lg-6">
         <div class="contact-info">
           <div class="contact-item" *ngFor="let item of contactItems">
@@ -271,37 +315,43 @@
           </div>
         </div>
       </div>
+
+      <!-- Contact Form -->
       <div class="col-lg-6">
         <div class="contact-form-wrapper">
           <div class="contact-form">
-            <h3>संपर्क करा</h3>
-            <form>
+            <h3>संदेश पाठवा</h3>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="apikey" value="6542ae57-249f-4950-9753-bf0288999d5a">
+              
               <div class="form-group">
                 <i class="fas fa-user"></i>
-                <input type="text" class="form-control" placeholder="तुमचे नाव" required>
+                <input type="text" name="name" placeholder="तुमचे नाव" required>
               </div>
+              
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input type="email" class="form-control" placeholder="ई-मेल" required>
+                <input type="email" name="email" placeholder="ई-मेल" required>
               </div>
+              
               <div class="form-group">
                 <i class="fas fa-phone"></i>
-                <input type="tel" class="form-control" placeholder="फोन नंबर" required>
+                <input type="tel" name="phone" placeholder="फोन नंबर" maxlength="10" required>
               </div>
-              <div class="form-group">
-                <i class="fas fa-list"></i>
-                <select class="form-control" required>
-                  <option value="">सेवा निवडा</option>
-                  <option *ngFor="let service of services" [value]="service.name">{{ service.name }}</option>
-                </select>
-              </div>
+              
               <div class="form-group">
                 <i class="fas fa-comment"></i>
-                <textarea class="form-control" placeholder="तुमचा संदेश" rows="4"></textarea>
+                <textarea name="message" placeholder="तुमचा संदेश" rows="5" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                <i class="fas fa-paper-plane"></i> संदेश पाठवा
-              </button>
+              
+              <div class="form-buttons">
+                <button type="submit" class="btn-submit">
+                  <i class="fas fa-paper-plane"></i> संदेश पाठवा
+                </button>
+                <a href="tel:+918669103497" class="btn-call-form">
+                  <i class="fas fa-phone"></i> कॉल करा
+                </a>
+              </div>
             </form>
           </div>
         </div>
