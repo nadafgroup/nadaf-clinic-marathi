@@ -105,11 +105,26 @@ export class HomeComponent {
     { number: '24/7', label: 'सेवा उपलब्धता', icon: 'fas fa-clock' }
   ];
 
-  // Contact Items
-  contactItems = [
-  { icon: 'fas fa-phone-alt', title: 'फोन', value: '+91 86691 03497', link: 'tel:+918669103497' },
-  { icon: 'fas fa-envelope', title: 'ई-मेल', value: 'nadafgroup.in&#64;gmail.com', link: 'mailto:nadafgroup.in&#64;gmail.com' },
-  { icon: 'fas fa-map-marker-alt', title: 'पत्ता', value: 'नांदणी, ता. शिरोळ, जि. कोल्हापूर', link: '' }
+  // Contact Items - Use actual @ symbol for display
+contactItems = [
+  { 
+    icon: 'fas fa-phone-alt', 
+    title: 'फोन', 
+    value: '+91 86691 03497', 
+    link: 'tel:+918669103497' 
+  },
+  { 
+    icon: 'fas fa-envelope', 
+    title: 'ई-मेल', 
+    value: 'nadafgroup.in@gmail.com',  // ← Use @ here
+    link: 'mailto:nadafgroup.in@gmail.com'  // ← Use @ here
+  },
+  { 
+    icon: 'fas fa-map-marker-alt', 
+    title: 'पत्ता', 
+    value: 'नांदणी, ता. शिरोळ, जि. कोल्हापूर', 
+    link: '' 
+  }
 ];
 
   // Working Hours
